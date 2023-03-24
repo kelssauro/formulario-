@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body>
+    <form action="ação a ser executada">
+        <fieldset>
+            <legend>USUÁRIO</legend>
+            <label for="inome">NOME:</label>
+            <input id="inome" name="txtnome" type="text" placeholder="digite seu nome">
+            <br>
+            <label for="idatadenascimento">DATA DE NASCIMENTO</label>
+            <input id="idatadenascimento"  name="txtdata de nascimento" type="date">
+            <br>
+            <label for="isexo">SEXO</label>
+                <select id="isexo" name="sexo" required>
+                    <option value="?"></option>
+                    <option value="feminino">FEMININO</option>
+                    <option value="masculino">MASCULINO</option>
+                    <option value="outro">AGÊNERO</option>
+                </select><br>
+            <label for="iemail">EMAIL:</label>
+            <input id="iemail" name="txtemail" type="email">
+            <br>
+            <label for="iconfirmaçãodoemail">CONFIRMAÇÃO DO EMAIL:</label>
+            <input id="iconfirmaçãodoemail" name="txtconfirmação de email" type="email">
+            <br>
+            <label>TIPO:</label>
+            <br>
+            <input type="radio" name="rtipo" id="iusuario" value="U">
+            <label for="iusuario">Usuário</label>
+            <input type="radio" name="rtipo" id="iadmin" value="A">
+            <label for="iadmin">Admin</label>
+            <br>
+            <label for="ifale">FALE SOBRE VOCÊ:</label>
+            <br>
+            <textarea name="txtafale" id="ifale" cols="50" rows="20"></textarea>
+            <input type="submit" value="entrar">
+            <input type="reset" value="limpar">
+        </fieldset>
+    </form>
+</body>
+</html>
